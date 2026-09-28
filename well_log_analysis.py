@@ -13,3 +13,6 @@ print(data.head())
 
 # Display basic information
 print(data.info())
+# Basic statistical analysis
+print("\nStatistical Summary:")
+print(data.describe())
