@@ -16,3 +16,13 @@ print(data.info())
 # Basic statistical analysis
 print("\nStatistical Summary:")
 print(data.describe())
+# Plot Gamma Ray log
+plt.figure(figsize=(6, 8))
+plt.plot(data["GR"], data["DEPTH"])
+plt.gca().invert_yaxis()
+
+plt.xlabel("Gamma Ray (API)")
+plt.ylabel("Depth")
+plt.title("Gamma Ray Log")
+
+plt.show()
