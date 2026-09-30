@@ -195,6 +195,33 @@ print(
         ["DEPTH", "VSH_GR", "NET_POROSITY", "RT", "RESERVOIR_QUALITY"]
     ]
 )
+# Final Petrophysical Evaluation Table
+
+petrophysical_evaluation = data[
+    [
+        "DEPTH",
+        "VSH_GR",
+        "PHI_D",
+        "NPHI",
+        "PHI_AVG",
+        "NET_POROSITY",
+        "RT",
+        "RESERVOIR_FLAG",
+        "RESERVOIR_QUALITY"
+    ]
+].copy()
+
+print("\nFinal Petrophysical Evaluation:")
+print(petrophysical_evaluation)
+# Save Final Petrophysical Evaluation
+
+petrophysical_evaluation.to_csv(
+    "petrophysical_evaluation.csv",
+    index=False
+)
+
+print("\nFinal Petrophysical Evaluation saved to CSV.")
+
 # Reservoir Quality vs Depth
 
 quality_map = {
@@ -239,7 +266,6 @@ plt.legend()
 
 plt.tight_layout()
 plt.savefig("reservoir_quality_vs_depth.png", dpi=300, bbox_inches="tight")
-
 # Reservoir Interval Thickness
 
 reservoir_data = data[data["RESERVOIR_FLAG"]]
