@@ -91,6 +91,28 @@ Reservoir intervals are classified into:
 
 based on predefined petrophysical criteria.
 
+## Visualizations
+
+### Well Log Overview
+
+![Well Log Overview](well_log_overview.png)
+
+### Density-Neutron Porosity Crossplot
+
+![Density-Neutron Crossplot](density_neutron_crossplot.png)
+
+### Average Porosity vs Depth
+
+![Average Porosity vs Depth](average_porosity_vs_depth.png)
+
+### Shale-adjusted Porosity vs Depth
+
+![Shale-adjusted Porosity vs Depth](shale_adjusted_porosity_vs_depth.png)
+
+### Reservoir Quality vs Depth
+
+![Reservoir Quality vs Depth](reservoir_quality_vs_depth.png)
+
 ---
 
 ## Output
