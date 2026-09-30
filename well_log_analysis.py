@@ -45,7 +45,7 @@ for ax in axes:
     ax.grid(True)
 
 plt.tight_layout()
-
+plt.savefig("well_log_overview.png", dpi=300, bbox_inches="tight")
 # Simple shale indicator based on Gamma Ray
 data["SHALE_FLAG"] = data["GR"] > 60
 
@@ -95,7 +95,8 @@ plt.colorbar(label="Depth")
 plt.grid(True)
 
 plt.tight_layout()
-plt.show()
+plt.savefig("density_neutron_crossplot.png", dpi=300, bbox_inches="tight")
+
 data["PHI_AVG"] = (data["PHI_D"] + data["NPHI"]) / 2
 print("\nAverage Porosity:")
 print(data[["DEPTH", "PHI_D", "NPHI", "PHI_AVG"]])
@@ -112,8 +113,9 @@ plt.gca().invert_yaxis()
 plt.grid(True)
 
 plt.tight_layout()
-plt.show()
-data["NET_POROSITY"] = data["PHI_AVG"] * (1 - data["VSH_GR"])
+plt.savefig("average_porosity_vs_depth.png", dpi=300, bbox_inches="tight")
+
+
 # Shale-adjusted porosity
 data["NET_POROSITY"] = data["PHI_AVG"] * (1 - data["VSH_GR"])
 
@@ -136,7 +138,8 @@ plt.gca().invert_yaxis()
 plt.grid(True)
 
 plt.tight_layout()
-plt.show()
+plt.savefig("shale_adjusted_porosity_vs_depth.png", dpi=300, bbox_inches="tight")
+
 # Final Petrophysical Summary
 summary = data[
     [
@@ -235,7 +238,8 @@ plt.grid(True)
 plt.legend()
 
 plt.tight_layout()
-plt.show()
+plt.savefig("reservoir_quality_vs_depth.png", dpi=300, bbox_inches="tight")
+
 # Reservoir Interval Thickness
 
 reservoir_data = data[data["RESERVOIR_FLAG"]]
