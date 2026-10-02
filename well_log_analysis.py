@@ -139,6 +139,55 @@ correlation = data["PHI_AVG"].corr(data["RT"])
 
 print("\nPorosity-Resistivity Correlation:")
 print("Correlation coefficient:", correlation)
+# Porosity-Resistivity Correlation Plot
+
+plt.figure(figsize=(7, 5))
+
+plt.scatter(
+    data["PHI_AVG"],
+    data["RT"],
+    label="Data points"
+)
+
+# Linear regression
+slope, intercept = np.polyfit(
+    data["PHI_AVG"],
+    data["RT"],
+    1
+)
+
+x_line = np.linspace(
+    data["PHI_AVG"].min(),
+    data["PHI_AVG"].max(),
+    100
+)
+
+y_line = slope * x_line + intercept
+
+plt.plot(
+    x_line,
+    y_line,
+    label="Linear regression"
+)
+
+plt.xlabel("Average Porosity")
+plt.ylabel("Resistivity (ohm.m)")
+plt.title(
+    f"Porosity vs Resistivity (r = {correlation:.3f})"
+)
+
+plt.legend()
+plt.grid(True)
+
+plt.tight_layout()
+
+plt.savefig(
+    "porosity_resistivity_correlation.png",
+    dpi=300,
+    bbox_inches="tight"
+)
+
+plt.close()
 
 
 # Shale-adjusted porosity

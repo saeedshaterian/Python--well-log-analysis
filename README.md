@@ -104,6 +104,9 @@ based on predefined petrophysical criteria.
 ### Porosity vs Resistivity
 
 ![Porosity vs Resistivity](porosity_resistivity_crossplot.png)
+### Porosity-Resistivity Correlation
+
+![Porosity-Resistivity Correlation](porosity_resistivity_correlation.png)
 
 ### Average Porosity vs Depth
 
