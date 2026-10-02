@@ -133,6 +133,12 @@ plt.colorbar(label="Depth")
 plt.tight_layout()
 plt.savefig("porosity_resistivity_crossplot.png", dpi=300)
 plt.close()
+# Porosity-Resistivity Correlation
+
+correlation = data["PHI_AVG"].corr(data["RT"])
+
+print("\nPorosity-Resistivity Correlation:")
+print("Correlation coefficient:", correlation)
 
 
 # Shale-adjusted porosity
