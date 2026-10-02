@@ -199,16 +199,27 @@ Key results from the synthetic dataset:
 These results are intended for educational and portfolio demonstration purposes. The reservoir flags, quality thresholds, and NTG calculation are simplified project-specific criteria and should not be interpreted as a field-scale reservoir evaluation workflow.
 
 ## Project Structure
-Python--well-log-analysis/
 
-│
-├── well_log_analysis.py
-├── well_log_data.csv
-├── reservoir_interval_summary.csv
-├── README.md
-└── .gitignore
+```text
+Python--well-log-analysis/
+|-- well_log_analysis.py
+|-- well_log_data.csv
+|-- petrophysical_evaluation.csv
+|-- reservoir_interval_summary.csv
+|-- requirements.txt
+|-- README.md
+|-- .gitignore
+|-- well_log_overview.png
+|-- density_neutron_crossplot.png
+|-- average_porosity_vs_depth.png
+|-- porosity_resistivity_crossplot.png
+|-- porosity_resistivity_correlation.png
+|-- shale_adjusted_porosity_vs_depth.png
+-- reservoir_quality_vs_depth.png
+```
 
 ---
+
 
 ## Author
 
