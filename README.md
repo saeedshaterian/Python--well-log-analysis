@@ -144,6 +144,21 @@ Example output:
 - Matplotlib
 
 ---
+## Results & Interpretation
+
+The analysis identifies a potential reservoir interval based on shale volume, shale-adjusted porosity, and resistivity criteria.
+
+Key results from the synthetic dataset:
+
+- The interpreted reservoir interval extends from approximately 2503 to 2505 depth units.
+- The interval contains three reservoir-flagged data points.
+- Average net porosity within the interpreted reservoir interval is approximately 0.185.
+- Average resistivity within the interpreted reservoir interval is approximately 20.3 ohm.m.
+- The calculated Net-to-Gross ratio (NTG) is approximately 33.3%.
+- Reservoir quality classification identifies the upper two points as "Good" and the third as "Moderate" according to the predefined project criteria.
+- The Pearson correlation coefficient between average porosity and resistivity is approximately 0.238, indicating a weak positive linear association in this synthetic dataset.
+
+These results are intended for educational and portfolio demonstration purposes. The reservoir flags, quality thresholds, and NTG calculation are simplified project-specific criteria and should not be interpreted as a field-scale reservoir evaluation workflow.
 
 ## Project Structure
 Python--well-log-analysis/
