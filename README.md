@@ -200,26 +200,23 @@ These results are intended for educational and portfolio demonstration purposes.
 
 ## Project Structure
 
-```text
-Python--well-log-analysis/
-|-- well_log_analysis.py
-|-- well_log_data.csv
-|-- petrophysical_evaluation.csv
-|-- reservoir_interval_summary.csv
-|-- requirements.txt
-|-- README.md
-|-- .gitignore
-|-- well_log_overview.png
-|-- density_neutron_crossplot.png
-|-- average_porosity_vs_depth.png
-|-- porosity_resistivity_crossplot.png
-|-- porosity_resistivity_correlation.png
-|-- shale_adjusted_porosity_vs_depth.png
--- reservoir_quality_vs_depth.png
-```
+    Python--well-log-analysis/
+    |-- well_log_analysis.py
+    |-- well_log_data.csv
+    |-- petrophysical_evaluation.csv
+    |-- reservoir_interval_summary.csv
+    |-- requirements.txt
+    |-- README.md
+    |-- .gitignore
+    |-- well_log_overview.png
+    |-- density_neutron_crossplot.png
+    |-- average_porosity_vs_depth.png
+    |-- porosity_resistivity_crossplot.png
+    |-- porosity_resistivity_correlation.png
+    |-- shale_adjusted_porosity_vs_depth.png
+    `-- reservoir_quality_vs_depth.png
 
 ---
-
 
 ## Author
 
