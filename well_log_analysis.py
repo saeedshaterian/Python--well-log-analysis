@@ -279,6 +279,24 @@ print("\nReservoir Interval:")
 print("Top Depth:", top_depth)
 print("Base Depth:", base_depth)
 print("Thickness:", reservoir_thickness)
+# Net-to-Gross Ratio (NTG)
+
+data["INTERVAL_THICKNESS"] = data["DEPTH"].diff().fillna(0)
+
+net_thickness = data.loc[
+    data["RESERVOIR_FLAG"],
+    "INTERVAL_THICKNESS"
+].sum()
+
+gross_thickness = data["INTERVAL_THICKNESS"].sum()
+
+ntg = net_thickness / gross_thickness
+
+print("\nNet-to-Gross Ratio:")
+print("Net Thickness:", net_thickness)
+print("Gross Thickness:", gross_thickness)
+print("NTG:", ntg)
+print("NTG (%):", ntg * 100)
 # Average Reservoir Properties
 
 avg_vsh = reservoir_data["VSH_GR"].mean()
