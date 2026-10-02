@@ -101,6 +101,10 @@ based on predefined petrophysical criteria.
 
 ![Density-Neutron Crossplot](density_neutron_crossplot.png)
 
+### Porosity vs Resistivity
+
+![Porosity vs Resistivity](porosity_resistivity_crossplot.png)
+
 ### Average Porosity vs Depth
 
 ![Average Porosity vs Depth](average_porosity_vs_depth.png)

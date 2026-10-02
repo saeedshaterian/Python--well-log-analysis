@@ -114,6 +114,25 @@ plt.grid(True)
 
 plt.tight_layout()
 plt.savefig("average_porosity_vs_depth.png", dpi=300, bbox_inches="tight")
+# Porosity-Resistivity Crossplot
+
+plt.figure(figsize=(7, 5))
+
+plt.scatter(
+    data["PHI_AVG"],
+    data["RT"],
+    c=data["DEPTH"],
+    cmap="viridis"
+)
+
+plt.xlabel("Average Porosity")
+plt.ylabel("Resistivity (ohm.m)")
+plt.title("Porosity vs Resistivity")
+plt.colorbar(label="Depth")
+
+plt.tight_layout()
+plt.savefig("porosity_resistivity_crossplot.png", dpi=300)
+plt.close()
 
 
 # Shale-adjusted porosity
