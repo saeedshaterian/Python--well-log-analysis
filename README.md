@@ -1,7 +1,18 @@
 # Python Well Log Analysis
 
-## Overview
+A Python-based petrophysical workflow for synthetic well-log evaluation, including shale volume estimation, porosity calculation, reservoir screening, reservoir quality classification, and petrophysical crossplots.
 
+## Key Skills Demonstrated
+
+- Python data analysis with Pandas and NumPy
+- Petrophysical evaluation from well-log data
+- Shale volume and porosity estimation
+- Reservoir interval screening and quality classification
+- Crossplot and correlation analysis
+- Data visualization with Matplotlib
+- Export of interpreted results to CSV
+
+## Overview
 This project demonstrates a basic petrophysical workflow for well log analysis using Python.
 
 The objective is to process well log data, calculate key petrophysical parameters, identify potential reservoir intervals, and classify reservoir quality.
