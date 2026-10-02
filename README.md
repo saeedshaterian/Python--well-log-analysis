@@ -135,6 +135,33 @@ Example output:
 `reservoir_interval_summary.csv`
 
 ---
+## How to Run
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/saeedshaterian/Python--well-log-analysis.git
+```
+
+2. Navigate to the project directory:
+
+```bash
+cd Python--well-log-analysis
+```
+
+3. Install the required Python packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+4. Run the analysis script:
+
+```bash
+python well_log_analysis.py
+```
+
+The script reads the synthetic well-log dataset, performs the petrophysical analysis, generates the visualizations, and saves the final evaluation results as CSV files.
 
 ## Technologies Used
 
